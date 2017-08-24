@@ -1,3 +1,4 @@
+
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -6,12 +7,20 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 
 import { MultilinePage } from '../pages/multiline/multiline';
+import { CardPage } from '../pages/card/card';
+
+//import { woocon } from './wpAPI.js';
+
+
+
+
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
+
 
   rootPage: any = MultilinePage;
 
@@ -23,8 +32,10 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      
+      { title: 'Card', component:CardPage },
+       
       { title: 'Multiline', component: MultilinePage }
+     
     ];
 
   }

@@ -5,4 +5,11 @@ import { NavController, NavParams } from 'ionic-angular';
 	selector: 'page-multiline',
     templateUrl: 'multiline.html'
 })
-export class MultilinePage { }
+
+export class MultilinePage {
+
+  constructor(public navCtrl: NavController) {
+
+  }
+
+}

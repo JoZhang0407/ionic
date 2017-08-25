@@ -8,7 +8,6 @@ import { HomePage } from '../pages/home/home';
 
 import { MultilinePage } from '../pages/multiline/multiline';
 import { CardPage } from '../pages/card/card';
-
 //import { woocon } from './wpAPI.js';
 
 
@@ -22,7 +21,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
 
-  rootPage: any = MultilinePage;
+  rootPage: any = CardPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -32,10 +31,9 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Card', component:CardPage },
-       
-      { title: 'Multiline', component: MultilinePage }
      
+        { title: 'Card', component: CardPage },
+      { title: 'Multiline', component: MultilinePage }
     ];
 
   }

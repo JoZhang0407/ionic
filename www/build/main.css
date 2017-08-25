@@ -7171,9 +7171,9 @@ ion-card-content {
   color: #222;
 }
 
-.card-md + ion-card {
+/*.card-md + ion-card {
   margin-top: 0;
-}
+}*/
 
 .card-md .text-md-primary {
   color: #488aff;
